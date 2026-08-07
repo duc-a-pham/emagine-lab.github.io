@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --ink: #171717;
   --ink-soft: #55565a;
   --paper: #f7f5f2;
@@ -256,7 +256,7 @@ img {
   align-content: center;
   background:
     linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(49, 0, 8, 0.7), rgba(0, 0, 0, 0.15)),
-    url("assets/hero-electromagnetic-lab.png");
+    url("assets/emagine-welcome-background.png");
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -896,7 +896,7 @@ h3 {
   background:
     linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.86) 22%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(90deg, rgba(0, 0, 0, 0.92), rgba(49, 0, 8, 0.74), rgba(0, 0, 0, 0.12)),
-    url("assets/hero-electromagnetic-lab.png");
+    url("assets/emagine-welcome-background.png");
   background-size: cover;
   background-position: center;
 }

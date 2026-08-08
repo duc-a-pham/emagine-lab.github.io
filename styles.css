@@ -2020,7 +2020,7 @@ h3 {
   display: none !important;
 }
 
-@media (min-width: 761px) {
+@media (min-width: 981px) {
   .site-shell {
     display: grid;
   }
@@ -2031,12 +2031,36 @@ h3 {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 980px) {
   .home-page .site-shell > .profile-sidebar {
     display: none !important;
   }
 
   .home-page .content .home-mobile-profile {
     display: grid !important;
+  }
+
+  body:not(.home-page):not(.pi-page) .profile-sidebar {
+    display: none !important;
+  }
+
+  body:not(.home-page):not(.pi-page) .content {
+    order: 1;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 980px) {
+  .site-shell {
+    display: flex !important;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    order: 1;
+  }
+
+  .site-shell > .profile-sidebar {
+    order: 2;
   }
 }

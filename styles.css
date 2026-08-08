@@ -2014,3 +2014,29 @@ h3 {
     line-height: 1.12;
   }
 }
+
+/* Final responsive guardrails: prevent duplicate Home PI profile blocks */
+.home-mobile-profile {
+  display: none !important;
+}
+
+@media (min-width: 761px) {
+  .site-shell {
+    display: grid;
+  }
+
+  .content,
+  .site-shell > .profile-sidebar {
+    order: initial;
+  }
+}
+
+@media (max-width: 760px) {
+  .home-page .site-shell > .profile-sidebar {
+    display: none !important;
+  }
+
+  .home-page .content .home-mobile-profile {
+    display: grid !important;
+  }
+}

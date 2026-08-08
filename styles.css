@@ -1874,3 +1874,84 @@ h3 {
     height: auto;
   }
 }
+
+/* Phone-only profile intro and restored text justification */
+@media (max-width: 760px) {
+  .site-shell {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-sidebar {
+    order: 1;
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 0.55rem;
+    margin: 0;
+    padding: 0.85rem 0 1rem;
+    border-top: 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.9rem;
+  }
+
+  .content {
+    order: 2;
+  }
+
+  .profile-photo {
+    grid-row: auto;
+    width: min(100%, 360px);
+    max-width: 100%;
+    justify-self: center;
+    aspect-ratio: 4 / 5;
+  }
+
+  .profile-sidebar h1,
+  .profile-title,
+  .profile-affiliation,
+  .profile-sidebar p,
+  .profile-sidebar address {
+    grid-column: auto;
+    width: min(100%, 360px);
+    justify-self: center;
+  }
+
+  .profile-sidebar h1 {
+    margin-top: 0.65rem;
+    font-size: 1.18rem;
+  }
+
+  .profile-sidebar address {
+    margin-top: 0.45rem;
+    line-height: 1.42;
+  }
+
+  .welcome-visual .intro-section p,
+  .research-intro p,
+  .research-list article p,
+  #members-title + .lead,
+  #bio-title ~ p,
+  .pub-full-list li,
+  .news-list li,
+  .contact-copy p {
+    text-align: justify;
+    text-align-last: left;
+  }
+}
+
+@media (max-width: 520px) {
+  .profile-sidebar {
+    font-size: 0.86rem;
+  }
+
+  .profile-photo,
+  .profile-sidebar h1,
+  .profile-title,
+  .profile-affiliation,
+  .profile-sidebar p,
+  .profile-sidebar address {
+    width: 100%;
+  }
+}

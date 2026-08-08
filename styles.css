@@ -1955,3 +1955,44 @@ h3 {
     width: 100%;
   }
 }
+
+/* Phone profile appears only on Home and PI; keep full header title visible */
+@media (max-width: 760px) {
+  body:not(.home-page):not(.pi-page) .profile-sidebar {
+    display: none;
+  }
+
+  body:not(.home-page):not(.pi-page) .content {
+    order: 1;
+  }
+
+  .brand small,
+  .brand .brand-copy small {
+    display: block;
+  }
+
+  .brand .brand-copy {
+    min-width: 0;
+  }
+
+  .brand .brand-copy strong,
+  .brand .brand-copy small {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 520px) {
+  .brand .brand-emagine-logo {
+    width: clamp(78px, 30vw, 108px);
+  }
+
+  .brand .brand-copy strong {
+    font-size: clamp(0.68rem, 3.5vw, 0.8rem);
+    line-height: 1.12;
+  }
+
+  .brand .brand-copy small {
+    font-size: clamp(0.56rem, 2.9vw, 0.66rem);
+    line-height: 1.12;
+  }
+}

@@ -1412,6 +1412,10 @@ h3 {
     grid-template-columns: 1fr;
     transform: none;
   }
+
+  .country-counter-widget {
+    display: none;
+  }
 }
 
 /* Center Home Welcome text block under the hero image without changing text width */

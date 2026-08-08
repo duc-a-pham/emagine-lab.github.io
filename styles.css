@@ -239,6 +239,10 @@ img {
   font-weight: 800;
 }
 
+.home-mobile-profile {
+  display: none;
+}
+
 .content {
   min-width: 0;
   padding: 2rem 0 4rem;
@@ -1958,6 +1962,16 @@ h3 {
 
 /* Phone profile appears only on Home and PI; keep full header title visible */
 @media (max-width: 760px) {
+  .home-page .site-shell > .profile-sidebar {
+    display: none;
+  }
+
+  .home-page .content .home-mobile-profile {
+    display: grid;
+    order: initial;
+    margin: 0.35rem 0 1rem;
+  }
+
   body:not(.home-page):not(.pi-page) .profile-sidebar {
     display: none;
   }

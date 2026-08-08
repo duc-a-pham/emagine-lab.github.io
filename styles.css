@@ -1883,8 +1883,8 @@ h3 {
   }
 }
 
-/* Phone-only profile intro and restored text justification */
-@media (max-width: 760px) {
+/* Compact profile intro and restored text justification */
+@media (max-width: 980px) {
   .site-shell {
     display: flex;
     flex-direction: column;

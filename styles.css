@@ -1367,6 +1367,45 @@ h3 {
   text-align-last: left;
 }
 
+.name-alias {
+  position: relative;
+  color: var(--uc-red);
+  cursor: help;
+  font-weight: 800;
+  border-bottom: 1px dotted rgba(226, 0, 26, 0.75);
+}
+
+.name-alias:focus {
+  outline: 2px solid rgba(226, 0, 26, 0.35);
+  outline-offset: 0.12rem;
+}
+
+.alias-tooltip {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  bottom: calc(100% + 0.5rem);
+  width: min(360px, 82vw);
+  padding: 0.65rem 0.75rem;
+  color: var(--white);
+  background: var(--ink);
+  border-left: 4px solid var(--uc-red);
+  box-shadow: var(--shadow);
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.35;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.25rem);
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+
+.name-alias:hover .alias-tooltip,
+.name-alias:focus .alias-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .visitor-widgets {
   display: grid;
   grid-template-columns: minmax(190px, max-content) minmax(260px, max-content);

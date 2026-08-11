@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --ink: #171717;
   --ink-soft: #55565a;
   --paper: #f7f5f2;
@@ -1851,7 +1851,7 @@ h3 {
 }
 
 .welcome-visual .intro-section .emagine-email-link {
-  color: #ff4a5f;
+  color: var(--uc-red);
 }
 
 

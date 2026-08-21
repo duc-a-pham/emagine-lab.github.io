@@ -444,6 +444,11 @@ h3 {
 
 .content > .page-section:last-child {
   border-bottom: 0;
+  padding-bottom: 0.35rem;
+}
+
+.content {
+  padding-bottom: 0.35rem;
 }
 
 .page-quote p {

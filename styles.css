@@ -432,10 +432,34 @@ h3 {
   color: var(--ink);
 }
 
+.page-quote {
+  width: min(1320px, calc(100% - 2rem));
+  margin: 0.125rem auto 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.content > .page-section:last-child {
+  border-bottom: 0;
+}
+
+.page-quote p {
+  width: min(980px, 100%);
+  margin: 0;
+  margin-inline: auto;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.98rem;
+  font-style: italic;
+  line-height: 1.55;
+}
+
 .site-footer {
   width: min(1320px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 1.4rem 0;
+  padding: 1rem 0 1.4rem;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
